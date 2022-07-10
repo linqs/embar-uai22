@@ -1,0 +1,133 @@
+predicates:
+    rating_prior/1:
+        - closed
+        - domains:
+            - constant
+    user/1:
+        - closed
+        - domains:
+            - user
+    item/1:
+        - closed
+        - domains:
+            - item
+    users_are_friends/2:
+        - closed
+        - domains:
+            - user
+            - user
+    sim_content_items_jaccard/2:
+        - closed
+        - domains:
+            - item
+            - item
+    sim_pearson_items/2:
+        - closed
+        - domains:
+            - item
+            - item
+    sim_cosine_items/2:
+        - closed
+        - domains:
+            - item
+            - item
+    sim_adjcos_items/2:
+        - closed
+        - domains:
+            - item
+            - item
+    sim_pearson_users/2:
+        - closed
+        - domains:
+            - user
+            - user
+    sim_cosine_users/2:
+        - closed
+        - domains:
+            - user
+            - user
+    sim_mf_cosine_users/2:
+        - closed
+        - domains:
+            - user
+            - user
+    sim_mf_euclidean_users/2:
+        - closed
+        - domains:
+            - user
+            - user
+    sim_mf_cosine_items/2:
+        - closed
+        - domains:
+            - item
+            - item
+    sim_mf_euclidean_items/2:
+        - closed
+        - domains:
+            - item
+            - item
+    avg_user_rating/1:
+        - closed
+        - domains:
+            - user
+    avg_item_rating/1:
+        - closed
+        - domains:
+            - item
+    sgd_rating/2:
+        - closed
+        - domains:
+            - user
+            - item
+    bpmf_rating/2:
+        - closed
+        - domains:
+            - user
+            - item
+    item_pearson_rating/2:
+        - closed
+        - domains:
+            - user
+            - item
+    rated/2:
+        - closed
+        - domains:
+            - user
+            - item
+    rating/2:
+        - open
+        - domains:
+            - user
+            - item
+
+observations:
+    rating_prior: ../data/yelp/4/eval/rating_prior.txt
+    user: ../data/yelp/4/eval/user_obs.txt
+    item: ../data/yelp/4/eval/item_obs.txt
+    users_are_friends: ../data/yelp/4/eval/users_are_friends_obs.txt
+    sim_content_items_jaccard: ../data/yelp/4/eval/sim_content_items_jaccard_obs.txt
+
+    sim_pearson_items: ../data/yelp/4/eval/sim_pearson_items_obs.txt
+    sim_cosine_items: ../data/yelp/4/eval/sim_cosine_items_obs.txt
+    sim_adjcos_items:  ../data/yelp/4/eval/sim_adjcos_items_obs.txt
+    sim_pearson_users: ../data/yelp/4/eval/sim_pearson_users_obs.txt
+    sim_cosine_users: ../data/yelp/4/eval/sim_cosine_users_obs.txt
+    sim_mf_cosine_users: ../data/yelp/4/eval/sim_mf_cosine_users_obs.txt
+    sim_mf_euclidean_users: ../data/yelp/4/eval/sim_mf_euclidean_users_obs.txt
+    sim_mf_cosine_items: ../data/yelp/4/eval/sim_mf_cosine_items_obs.txt
+    sim_mf_euclidean_items: ../data/yelp/4/eval/sim_mf_euclidean_items_obs.txt
+
+    avg_user_rating: ../data/yelp/4/eval/avg_user_rating_obs.txt
+    avg_item_rating: ../data/yelp/4/eval/avg_item_rating_obs.txt
+
+    rated: ../data/yelp/4/eval/rated_obs.txt
+    rating: ../data/yelp/4/eval/rating_obs.txt
+    sgd_rating: ../data/yelp/4/eval/sgd_rating_obs.txt
+    bpmf_rating: ../data/yelp/4/eval/bpmf_rating_obs.txt
+    item_pearson_rating: ../data/yelp/4/eval/item_pearson_rating_obs.txt
+
+targets:
+   rating: ../data/yelp/4/eval/rating_targets.txt
+
+truth:
+   rating: ../data/yelp/4/eval/rating_truth.txt
