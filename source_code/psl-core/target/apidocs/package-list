@@ -1,7 +1,6 @@
 org.linqs.psl.application
 org.linqs.psl.application.inference
 org.linqs.psl.application.learning.structure
-org.linqs.psl.application.learning.structure.mdp
 org.linqs.psl.application.learning.structure.rulegen
 org.linqs.psl.application.learning.structure.template
 org.linqs.psl.application.learning.weight
