@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly DATA_URL='https://linqs-data.soe.ucsc.edu/public/psl-examples-data/cora.zip'
+readonly DATA_URL='https://linqs-data.soe.ucsc.edu/public/embar-uai22/cora.zip'
 readonly DATA_FILE='cora.zip'
 readonly DATA_DIR='cora'
 
