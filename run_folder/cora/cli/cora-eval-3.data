@@ -1,0 +1,128 @@
+predicates:
+    author/2:
+        - closed
+        - domains:
+            - paper
+            - author
+    haswordauthor/2:
+        - closed
+        - domains:
+            - author
+            - word
+    haswordtitle/2:
+        - closed
+        - domains:
+            - title
+            - word
+    haswordvenue/2:
+        - closed
+        - domains:
+            - venue
+            - word
+    title/2:
+        - closed
+        - domains:
+            - paper
+            - title
+    venue/2:
+        - closed
+        - domains:
+            - paper
+            - venue
+    samebib/2:
+        - open
+        - domains:
+            - paper
+            - paper
+    sametitle/2:
+        - closed
+        - domains:
+            - title
+            - title
+    samevenue/2:
+        - closed
+        - domains:
+            - venue
+            - venue
+    sameauthor/2:
+        - closed
+        - domains:
+            - author
+            - author
+    _author/2:
+        - closed
+        - domains:
+            - author
+            - paper
+    _haswordauthor/2:
+        - closed
+        - domains:
+            - word
+            - author
+    _haswordtitle/2:
+        - closed
+        - domains:
+            - word
+            - title
+    _haswordvenue/2:
+        - closed
+        - domains:
+            - word
+            - venue
+    _title/2:
+        - closed
+        - domains:
+            - title
+            - paper
+    _venue/2:
+        - closed
+        - domains:
+            - venue
+            - paper
+    _sametitle/2:
+        - closed
+        - domains:
+            - title
+            - title
+    _samevenue/2:
+        - closed
+        - domains:
+            - venue
+            - venue
+    _sameauthor/2:
+        - closed
+        - domains:
+            - author
+            - author
+    targets/2:
+        - closed
+        - domains:
+            - paper
+            - paper
+
+observations:
+    author: ../data/3/eval/author_obs.txt
+    haswordauthor: ../data/3/eval/haswordauthor_obs.txt
+    haswordtitle: ../data/3/eval/haswordtitle_obs.txt
+    haswordvenue: ../data/3/eval/haswordvenue_obs.txt
+    title: ../data/3/eval/title_obs.txt
+    venue: ../data/3/eval/venue_obs.txt
+    sametitle:  ../data/3/eval/sametitle_obs.txt
+    samevenue: ../data/3/eval/samevenue_obs.txt
+    _author: ../data/3/eval/author_obs.txt
+    _haswordauthor: ../data/3/eval/_haswordauthor_obs.txt
+    _haswordtitle: ../data/3/eval/_haswordtitle_obs.txt
+    _haswordvenue: ../data/3/eval/_haswordvenue_obs.txt
+    _title: ../data/3/eval/_title_obs.txt
+    _venue: ../data/3/eval/_venue_obs.txt
+    _sametitle:  ../data/3/eval/_sametitle_obs.txt
+    _samevenue: ../data/3/eval/_samevenue_obs.txt
+    sameauthor: ../data/3/eval/sameauthor_obs.txt
+    _sameauthor: ../data/3/eval/_sameauthor_obs.txt
+    targets: ../data/3/eval/targets.txt
+
+targets:
+   samebib: ../data/3/eval/samebib_targets.txt
+
+truth:
+   samebib: ../data/3/eval/samebib_truth.txt
